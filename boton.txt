@@ -1,0 +1,76 @@
+html
+
+  <button class="superboton">
+    <span>BOTON</span>
+</button>
+
+   <button class="btn">
+            <div class="btn-div"></div>
+            <div class="btn-div"></div>
+            <div class="btn-div"></div>
+          </button>
+
+css
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border 0;
+  background: transparent;
+  gap: .65rem;
+}
+
+.btn-div {
+  background: black;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.btn:hover > .btn-div:first-child {
+ transform:rotate(45deg);
+}
+
+.btn:hover > .btn-div:nth-child(2) {
+  opacity: 0;
+}
+
+.btn:hover .btn-div:last-child {
+ transform:rotate(-45deg);
+ 
+}
+
+.superboton {
+  border: 0;
+  background-image: linear-gradient(
+    150deg,
+    #9500ff,
+    #09f,
+    #00DDFF
+  );
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
