@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -418,6 +418,8 @@ footer div:hover {
   scale: 2;
 }
 
+
+
 /** -CONTENEDOR   -----------------------------------------------------------**/
 
 .frase-container {
@@ -603,6 +605,7 @@ iframe:hover {
 
 
 
+
 /** Media queries --------------**/
 
 
@@ -611,9 +614,6 @@ iframe:hover {
   section {
     filter: brightness(100%);
     background-position: center;
-  }
-      section:hover, section:active {
-    display: none;
   }
 }
 
@@ -624,10 +624,6 @@ iframe:hover {
   section {
     filter: brightness(100%);
     background-position: center;
-  }
-
-        section:hover, section:active {
-    display: none;
   }
   
   .logo > img{
@@ -688,11 +684,12 @@ iframe:hover {
     width: 200px;
   }
 
-  .slider img + div {
+  .slider img:active + div {
     opacity: 1;
     background-color: chartreuse;
     translate: -50vw;
     font-size: 14px;
+    display: none;
   }
 
   .libros-container > div {
