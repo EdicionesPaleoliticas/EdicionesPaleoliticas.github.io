@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;  
   min-height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 
 header {
@@ -416,105 +418,6 @@ footer div:hover {
   scale: 2;
 }
 
-/** Media queries --------------**/
-
-
-@media only screen and (max-width: 810px) {
-  
-  section {
-    filter: brightness(100%);
-    background-position: center;
-  }
-}
-
-
-
-@media only screen and (max-width: 1025px) {
-  
-  section {
-    filter: brightness(100%);
-    background-position: center;
-  }
-  
-  .logo > img{
-    height: 100%;
-    width: 90vw;
-    margin-top: 0px;
-  }
-
-  .nav-comun {
-    background-color: none;
-  }
-
-  .menu-container {
-    flex-direction: column;
-    height: 0px;
-    display: none;
-    transition: 1s;
-    position: sticky;
-  }
-
-  .menu-container a {
-    padding: 20px;
-  }
-
-  .menu-open {
-    display: flex;
-    height: 100%;
-  }
-
-  .huesito {
-    display: flex;
-  }
-
-  .hdr-iconos:hover > h1 {
-    display: none; 
-  }
-
-  .section-slider {
-    height: 100%;
-    padding-bottom: 20px;
-  }
-  .slider-container {
-    display: none;
-  }
-
-  .respo {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    overflow: auto;
-    margin: auto;
-    margin-top: -80px;
-    margin-bottom: -50px;    
-  }
-
-  .respo > div > img{
-    height: 200px;
-    width: 200px;
-  }
-
-  .slider img + div {
-    opacity: 1;
-    background-color: chartreuse;
-    translate: -50vw;
-    font-size: 14px;
-  }
-
-  .libros-container > div {
-    flex-wrap: wrap;
-  }
-
-  iframe {
-    max-width: 300px;
-  }
-
-  .info {
-    display: none;
-  }
-}
-
-
 /** -CONTENEDOR   -----------------------------------------------------------**/
 
 .frase-container {
@@ -700,4 +603,107 @@ iframe:hover {
 
 
 
+/** Media queries --------------**/
 
+
+@media only screen and (max-width: 810px) {
+  
+  section {
+    filter: brightness(100%);
+    background-position: center;
+  }
+      section:hover, section:active {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+  
+  section {
+    filter: brightness(100%);
+    background-position: center;
+  }
+
+        section:hover, section:active {
+    display: none;
+  }
+  
+  .logo > img{
+    height: 100%;
+    width: 90vw;
+    margin-top: 0px;
+  }
+
+  .nav-comun {
+    background-color: none;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    height: 0px;
+    display: none;
+    transition: 1s;
+    position: sticky;
+  }
+
+  .menu-container a {
+    padding: 20px;
+  }
+
+  .menu-open {
+    display: flex;
+    height: 100%;
+  }
+
+  .huesito {
+    display: flex;
+  }
+
+  .hdr-iconos:hover > h1 {
+    display: none; 
+  }
+
+  .section-slider {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .slider-container {
+    display: none;
+  }
+
+  .respo {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    margin-top: -80px;
+    margin-bottom: -50px;    
+  }
+
+  .respo > div > img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .slider img + div {
+    opacity: 1;
+    background-color: chartreuse;
+    translate: -50vw;
+    font-size: 14px;
+  }
+
+  .libros-container > div {
+    flex-wrap: wrap;
+  }
+
+  iframe {
+    max-width: 300px;
+  }
+
+  .info {
+    display: none;
+  }
+}
