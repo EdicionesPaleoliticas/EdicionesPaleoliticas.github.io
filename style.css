@@ -1,68 +1,68 @@
 /** RESET -------------------------------------------**/
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 html {
-  scroll-behavior: smooth;  
-  min-height: -webkit-fill-available;
-  overflow-x: hidden;
+scroll-behavior: smooth;  
+min-height: -webkit-fill-available;
+overflow-x: hidden;
 }
 
 body {
-  scroll-behavior: smooth;  
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
-  overflow-x: hidden;
+scroll-behavior: smooth;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+min-height: -webkit-fill-available;
+overflow-x: hidden;
 }
 
 header {
-      width: 100svw;
-      background-color: #222222;
-      border: 2px rgb(0, 0, 0) solid;
-      position: sticky;
-      top: 0;
-      z-index: 2000;
-      
+    width: 100svw;
+    background-color: #222222;
+    border: 2px rgb(0, 0, 0) solid;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+
 }
 
 section {
-  filter: brightness(40%);
+filter: brightness(40%);
 }
 
 
 /** HEADER ---------------------------------------------------**/
 
 .hdr-container {
-    padding: 10px;
-    display: flex;
-    margin: auto;
-    color: antiquewhite;
-    width: 100%;
-    justify-content: left;
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  color: antiquewhite;
+  width: 100%;
+  justify-content: left;
 }
 
 .hdr-container div {
-    width: 50%;
+  width: 50%;
 }
 
 .hdr-iconos-container > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  flex-wrap: nowrap;
-  list-style: none;
- }
+display: flex;
+flex-direction: row;
+justify-content: right;
+flex-wrap: nowrap;
+list-style: none;
+}
 
 .hdr-iconos {
- margin-inline: 5px;
- }
+margin-inline: 5px;
+}
 
 .hdr-iconos > a > img {
 height: 20px;
@@ -71,181 +71,181 @@ height: 20px;
 /** Animacion maquina de escriir -------------**/
 
 .maquina {
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 4px solid;
-  width: 24ch;
-  animation: typing 2s steps(24), blink .5s infinite step-end alternate;
-  overflow: hidden;
+display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 24ch;
+animation: typing 2s steps(24), blink .5s infinite step-end alternate;
+overflow: hidden;
 }
 
 .maquina:active {
-  animation: typing 2s steps(24), blink .5s infinite step-end alternate;
+animation: typing 2s steps(24), blink .5s infinite step-end alternate;
 }
 
 /** botoón animado redes sociales --------**/
 
 .hdr-iconos h1 {
-  display: none;
+display: none;
 }
- 
+
 .hdr-iconos:hover > h1 {
-  display: inline-flex;
-  font-size: 16px;
-  font-family: monospace; 
+display: inline-flex;
+font-size: 16px;
+font-family: monospace; 
 }
 
 
 /**PORTADA -------------------------------------------------------**/
 
 .portada-section {
-  display: flex;
-  background-image: url(https://argentear.com/wp-content/uploads/2016/07/Cueva-de-las-manos.jpg);
-  flex-wrap: wrap;
-  justify-content: center;
-  background-attachment: fixed;
-  animation: fadeIn 1s ease;
-  padding-top: 40px;
+display: flex;
+background-image: url(https://argentear.com/wp-content/uploads/2016/07/Cueva-de-las-manos.jpg);
+flex-wrap: wrap;
+justify-content: center;
+background-attachment: fixed;
+animation: fadeIn 1s ease;
+padding-top: 40px;
 }
 
 .buttons {
-  flex-direction: row;
+flex-direction: row;
 }
 
 .buttons > a > img {
-  height: 50px;
-  margin: 20px;
-  z-index: 10;
+height: 50px;
+margin: 20px;
+z-index: 10;
 }
 
 /**BOTON ----------------------------**/
 
 
 .boton {
-  transition: .5s;
+transition: .5s;
 }
 
 .boton:hover {
-  scale: 1.2;
-  rotate: 15deg;
+scale: 1.2;
+rotate: 15deg;
 }
 .boton:active {
-  scale: .8;
+scale: .8;
 }
 
- /** LOGO ----------------------------------------------- **/
+/** LOGO ----------------------------------------------- **/
 
- .logo {
-  width: 100%;
-  animation: fadeIn 3s ease;
-  display: flex;
-  justify-content: center;
+.logo {
+width: 100%;
+animation: fadeIn 3s ease;
+display: flex;
+justify-content: center;
 }
 
 .logo > img {
-  height: cover;
+height: cover;
 }
 
 
 .logo > img:hover {
-  scale: 1.2;
-  rotate: 5deg;
-  cursor: pointer;
-  transition: 2s;
+scale: 1.2;
+rotate: 5deg;
+cursor: pointer;
+transition: 2s;
 }
 
 .logo > img:not(:hover) {
-  transition: 2s;
+transition: 2s;
 }
 
 .logo > img:active {
-  scale: 1.3;
-  rotate: 5deg;
-  animation: fadeIn 1s ease;
-  transition: 2s;
+scale: 1.3;
+rotate: 5deg;
+animation: fadeIn 1s ease;
+transition: 2s;
 }
 
 .logo > img:not(:active) {
-   transition: 1s;
+ transition: 1s;
 }
 
 .info {
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  position: fixed;
-  bottom: 20px;
-  left: 10px; 
+display: flex;
+justify-content: right;
+align-items: right;
+position: fixed;
+bottom: 20px;
+left: 10px; 
 }
 
 .info >img {
-  height: 30px;
+height: 30px;
 }
 
 .info:hover::before, .info:active::before {
-  content: 'Cueva de las manos, Patagonia. 10.000 años.';
-  position: fixed;
-  left: 30px;
-  bottom: 25px;
-  background-color: #333;
-  border-radius: 10px;
-  opacity: .8;
-  padding: 5px;
-  color: rgb(253, 248, 247);
-  font-size: 12px;
- 
+content: 'Cueva de las manos, Patagonia. 10.000 años.';
+position: fixed;
+left: 30px;
+bottom: 25px;
+background-color: #333;
+border-radius: 10px;
+opacity: .8;
+padding: 5px;
+color: rgb(253, 248, 247);
+font-size: 12px;
+
 }
 
 /** NAV MENU ----------------------------------------------------**/
 
 
 .huesito {
-  display: none;
-  height: 40px;
-  justify-content: center;
-  padding: 5px;
+display: none;
+height: 40px;
+justify-content: center;
+padding: 5px;
 }
 
 .huesito:active {
-  scale: .8;
+scale: .8;
 }
 
 nav {
-  background-color: #1e1e2a;
-  border: solid 2px black;
-  color: aliceblue;
-  width: 100%;
-  position: sticky;
-  top: 47px;
-  z-index: 999;
-  box-shadow: -6px 5px 5px black;
+background-color: #1e1e2a;
+border: solid 2px black;
+color: aliceblue;
+width: 100%;
+position: sticky;
+top: 47px;
+z-index: 999;
+box-shadow: -6px 5px 5px black;
 }
 
 .menu-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 80%;
-  padding: 10px;
-  top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+width: 80%;
+padding: 10px;
+top: 50px;
 }
 
 .menu-container a {
-  display: block;
-  margin: auto;
-  text-decoration: none;
-  color: white;
-  z-index: 100;
+display: block;
+margin: auto;
+text-decoration: none;
+color: white;
+z-index: 100;
 }
 
 .menu-container a:hover {
-  scale: 1.5;
-  color: red;
-  rotate: 5deg;
-  cursor: pointer;
-  transition: 2s;
+scale: 1.5;
+color: red;
+rotate: 5deg;
+cursor: pointer;
+transition: 2s;
 }
 
 
@@ -253,28 +253,28 @@ nav {
 /** SLIDER ESPACIO SECTION  -----------------------------**/
 
 .section-slider {
-  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png);
-  background-repeat: no-repeat;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
+background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png);
+background-repeat: no-repeat;
+height: 800px;
+display: flex;
+flex-direction: column;
 }
 
 
 .titulo {
-  justify-content: center;
-  padding: 25px;
-  padding-top: 30px;
-  color: aliceblue;
-  font-weight: 200;
-  font-size: x-large;
-  font-family: Handjet, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-transform: uppercase;
-  text-shadow: #222 2px 5px;
-  font-size: 60px;
-  text-align: center;
-  letter-spacing: 2px;
- 
+justify-content: center;
+padding: 25px;
+padding-top: 30px;
+color: aliceblue;
+font-weight: 200;
+font-size: x-large;
+font-family: Handjet, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-transform: uppercase;
+text-shadow: #222 2px 5px;
+font-size: 60px;
+text-align: center;
+letter-spacing: 2px;
+
 }
 
 /**SLIDER -----------------------------------------------------**/
@@ -282,109 +282,109 @@ nav {
 
 
 .slider {
-  display: flex;
-  width: 80%;
-  height: 430px;
-  align-items: center;
-  margin: auto;
-  margin-top: -50px;
-  margin-bottom: -50px;
+display: flex;
+width: 80%;
+height: 430px;
+align-items: center;
+margin: auto;
+margin-top: -50px;
+margin-bottom: -50px;
 }
 
 .slider > img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .6;
-  transition: .5s ease;
-  aspect-ratio: 1 / 1;
-  margin-inline: 10px;
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: .6;
+transition: .5s ease;
+aspect-ratio: 1 / 1;
+margin-inline: 10px;
 
 }
 
 .slider-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+
 }
 
 .slider img + div {
-  background-color: aquamarine;
-  opacity: .8;
-  height: 300px;
-  width: 300px;
-  justify-content: center;
-  padding: 10px;
-  margin: auto;
-  display: none;
-  border-radius: 20px;
-  color: #000000;
-  align-items: center;
-  text-align: center;
-  box-shadow: -6px 5px 5px;
+background-color: aquamarine;
+opacity: .8;
+height: 300px;
+width: 300px;
+justify-content: center;
+padding: 10px;
+margin: auto;
+display: none;
+border-radius: 20px;
+color: #000000;
+align-items: center;
+text-align: center;
+box-shadow: -6px 5px 5px;
 }
 
 .slider > div {
-  transition: all 2s;
+transition: all 2s;
 }
 
 .slider > img:hover {
-  cursor:pointer;
-  width: 300px;
-  opacity: .8;
-  filter: contrast(130%);
-  
+cursor:pointer;
+width: 300px;
+opacity: .8;
+filter: contrast(130%);
+
 }
 
 .tresde:active {
-  transform: rotateY(360deg);
-  rotate: 10deg;
-  transition: 3s;
+transform: rotateY(360deg);
+rotate: 10deg;
+transition: 3s;
 }
 
 .tresde:not(:active) {
-  transition: 3s;
+transition: 3s;
 }
 
 .slider > img:active {
-  width: 300px;
-  opacity: 1;
-  filter: contrast(130%);
+width: 300px;
+opacity: 1;
+filter: contrast(130%);
 }
 
 .slider img:active + div {
-  display:flex;
-  height: auto;
-  padding: 25px;
-  z-index: 200;
-  rotate: 5deg;
-  background-color: rgb(190, 241, 72);
-  transition: all 5s;
+display:flex;
+height: auto;
+padding: 25px;
+z-index: 200;
+rotate: 5deg;
+background-color: rgb(190, 241, 72);
+transition: all 5s;
 }
- .linea {
-  background-color: #222222;
-  height: 1px;
-  width: 100%;
- }
+.linea {
+background-color: #222222;
+height: 1px;
+width: 100%;
+}
 
 
 /** CABECERAS -------------**/
 
 .cabeceras {
-  justify-content: center;
-  background-color: rgb(24, 19, 19);
-  color: #ecebeb;
-  border: solid 2px #333;
-  padding: 10px;
-  text-align: center;
-  box-shadow: -6px 5px 5px black;
-  font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
+justify-content: center;
+background-color: rgb(24, 19, 19);
+color: #ecebeb;
+border: solid 2px #333;
+padding: 10px;
+text-align: center;
+box-shadow: -6px 5px 5px black;
+font-size: 14px;
+font-family: 'Courier New', Courier, monospace;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 2px;
 }
 
 
@@ -392,315 +392,308 @@ nav {
 /**footer---------------**/
 
 footer {
-  height: auto;
-  background-color: #222222;
-  display: flex;
-  justify-content: center;
-  color: aliceblue;
-  border: 2px solid #000000;
-  flex-wrap: wrap;
+height: auto;
+background-color: #222222;
+display: flex;
+justify-content: center;
+color: aliceblue;
+border: 2px solid #000000;
+flex-wrap: wrap;
 }
 
 footer div {
-  margin: auto;
-  padding: 5px;
-  box-sizing: border-box;
+margin: auto;
+padding: 5px;
+box-sizing: border-box;
 }
 
 footer div:hover {
-  color: coral;
-  scale: 1.5;
+color: coral;
+scale: 1.5;
 }
 
 #firulete:hover{
-  rotate: 360deg;
-  transition: 5s;
-  scale: 2;
+rotate: 360deg;
+transition: 5s;
+scale: 2;
 }
 
+/** Media queries --------------**/
+
+
+@media only screen and (max-width: 810px) {
+
+section {
+  filter: brightness(100%);
+  background-position: center;
+}
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+
+section {
+  filter: brightness(100%);
+  background-position: center;
+}
+
+.logo > img{
+  height: 100%;
+  width: 90vw;
+  margin-top: 0px;
+}
+
+.nav-comun {
+  background-color: none;
+}
+
+.menu-container {
+  flex-direction: column;
+  height: 0px;
+  display: none;
+  transition: 1s;
+  position: sticky;
+}
+
+.menu-container a {
+  padding: 20px;
+}
+
+.menu-open {
+  display: flex;
+  height: 100%;
+}
+
+.huesito {
+  display: flex;
+}
+
+.hdr-iconos:hover > h1 {
+  display: none; 
+}
+
+.section-slider {
+  height: 100%;
+  padding-bottom: 20px;
+}
+.slider-container {
+  display: none;
+}
+
+.respo {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  overflow: auto;
+  margin: auto;
+  margin-top: -80px;
+  margin-bottom: -50px;    
+}
+
+.respo > div > img{
+  height: 200px;
+  width: 200px;
+}
+
+.slider img:hover + div, .slider img:active + div {
+ display: none;
+}
+
+.libros-container > div {
+  flex-wrap: wrap;
+}
+
+iframe {
+  max-width: 300px;
+}
+
+.info {
+  display: none;
+}
+}
 
 
 /** -CONTENEDOR   -----------------------------------------------------------**/
 
 .frase-container {
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  background-color: rgb(178, 154, 255);
-  opacity: 60%;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  max-width: 80%;
-  border-radius: 20px;
-  box-shadow: -6px 5px 5px;
+align-items: center;
+justify-content: center;
+margin: auto;
+background-color: rgb(178, 154, 255);
+opacity: 60%;
+margin-top: 100px;
+margin-bottom: 50px;
+max-width: 80%;
+border-radius: 20px;
+box-shadow: -6px 5px 5px;
 }
 
 .frase-container:hover {
-  scale: 1.2;
-  transition: 2s;
-  opacity: 1;
+scale: 1.2;
+transition: 2s;
+opacity: 1;
 }
 
 .frase-container:active {
-  background-color: rgb(255, 255, 255);
-  scale: 1.1;
-  transition: 1s;
-  opacity: 1;
+background-color: rgb(255, 255, 255);
+scale: 1.1;
+transition: 1s;
+opacity: 1;
 }
 
 .frase-container:not(:active) {
-  transition: .5s;
+transition: .5s;
 }
 
 .frase-container p {
-  opacity: 100%;
-  text-align: center;
+opacity: 100%;
+text-align: center;
 
-  padding: 20px;
+padding: 20px;
 }
 
 /** LIBROS SECTION -----------------------------------------------**/
 
 
 .libros-section {
-  background-image: url(https://cdn.pixabay.com/photo/2016/07/30/00/03/winding-road-1556177_960_720.jpg);
-  background-size: cover;
-  min-height: 700px;
- 
+background-image: url(https://cdn.pixabay.com/photo/2016/07/30/00/03/winding-road-1556177_960_720.jpg);
+background-size: cover;
+min-height: 700px;
+
 }
 
 .libros-container-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   width: 80%;
-   align-items: center;
-   margin: auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ width: 80%;
+ align-items: center;
+ margin: auto;
 }
 
 .libros-container {
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  margin-top: 70px;
+flex-direction: row;
+flex-wrap: wrap;
+text-align: center;
+align-items: center;
+margin-top: 70px;
 }
 
 .libros-container img {
-  max-width: 300px;
+max-width: 300px;
 }
 
 .libros-container p {
-  padding: 20px;
-  background-color: rgb(247, 234, 60);  
+padding: 20px;
+background-color: rgb(247, 234, 60);  
 }
 
 iframe {
-  margin: 10px;
-  justify-content: center;
-  align-items: center;
+margin: 10px;
+justify-content: center;
+align-items: center;
 }
 
 .libros-container > h2,h3,h4 {
-  background-color: #222;
-  color: #ecebeb;
-  padding: 10px;
-  border-radius: 20px;
-  opacity: .8;
-  width: fit-content;
-  display: inline-flex;
-  margin-inline: 30px;
-  
+background-color: #222;
+color: #ecebeb;
+padding: 10px;
+border-radius: 20px;
+opacity: .8;
+width: fit-content;
+display: inline-flex;
+margin-inline: 30px;
+
 }
 .libros-container div {
-  display: flex;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
-  
+display: flex;
+width: fit-content;
+justify-content: center;
+align-items: center;
+
 }
 
 /** HUERTA SECTION -----------------------------**/
 
 .huerta-section {
-  background-image: url(https://lahuertaorganica.com/wp-content/uploads/2019/02/huerta-en-macetas.jpg);
-  background-size: cover;
-  height: 700px;
+background-image: url(https://lahuertaorganica.com/wp-content/uploads/2019/02/huerta-en-macetas.jpg);
+background-size: cover;
+height: 700px;
 }
 
 /** QUIENESO SOMOS SECTION------------------------------- **/
 
 .quienes-somos-section {
-  background-image: url(https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_960_720.jpg);
-  background-size: cover;
-  height:700px;
+background-image: url(https://cdn.pixabay.com/photo/2020/05/31/04/36/investment-5241253_960_720.jpg);
+background-size: cover;
+height:700px;
 }
 
 /** HOVER Y ACTIVE **/
 
 .shake-right:hover{animation:shake-right 0.8s linear both} 
-  @keyframes shake-right{
-    0%,100%{transform:rotate(0deg);transform-origin:100% 50%}
-    10%{transform:rotate(2deg)}
-    20%,40%,60%{transform:rotate(-4deg)}
-    30%,50%,70%{transform:rotate(4deg)}
-    80%{transform:rotate(-2deg)}
-    90%{transform:rotate(2deg)}
+@keyframes shake-right{
+  0%,100%{transform:rotate(0deg);transform-origin:100% 50%}
+  10%{transform:rotate(2deg)}
+  20%,40%,60%{transform:rotate(-4deg)}
+  30%,50%,70%{transform:rotate(4deg)}
+  80%{transform:rotate(-2deg)}
+  90%{transform:rotate(2deg)}
 }
 
 section:hover {
-  background-position: right 20%;
-  filter: brightness(100%);
-  transition: filter .5s, background-position 5s;
+background-position: right 20%;
+filter: brightness(100%);
+transition: filter .5s, background-position 5s;
 }
 
 section:not(:hover) {
-  transition: filter 1.5s, background-position 3s;
+transition: filter 1.5s, background-position 3s;
 }
 
 
 
 .libros-container > div > img:hover {
-  scale: 1.2;
-  rotate: 10deg;
-  transition: 1.5s;
+scale: 1.2;
+rotate: 10deg;
+transition: 1.5s;
 }
 
 .libros-container > div > img:active {
-  scale: 1.4;
-  rotate: 10deg;
-  transition: 1.5s;
+scale: 1.4;
+rotate: 10deg;
+transition: 1.5s;
 }
 
 iframe:hover {
-  scale: .95;
-  transition: 1s;
+scale: .95;
+transition: 1s;
 }
 
 
 /** Animaciones------------**/
 
 @keyframes fadeIn {
-  0% { 
-    opacity: 0;
-    filter: blur(20px)
-  }
-  
-  10% { 
-    opacity: 1;
-    filter: brightness(2) blur(10px)
-  }
+0% { 
+  opacity: 0;
+  filter: blur(20px)
+}
+
+10% { 
+  opacity: 1;
+  filter: brightness(2) blur(10px)
+}
 
 }
 
 
 @keyframes typing {
-  from {width: 0}
+from {width: 0}
 }
 
 @keyframes blink {
-  50% { border-color: transparent}
- 
+50% { border-color: transparent}
+
 }
 
-
-
-
-/** Media queries --------------**/
-
-
-@media only screen and (max-width: 810px) {
-  
-  section {
-    filter: brightness(100%);
-    background-position: center;
-  }
-}
-
-
-
-@media only screen and (max-width: 1025px) {
-  
-  section {
-    filter: brightness(100%);
-    background-position: center;
-  }
-  
-  .logo > img{
-    height: 100%;
-    width: 90vw;
-    margin-top: 0px;
-  }
-
-  .nav-comun {
-    background-color: none;
-  }
-
-  .menu-container {
-    flex-direction: column;
-    height: 0px;
-    display: none;
-    transition: 1s;
-    position: sticky;
-  }
-
-  .menu-container a {
-    padding: 20px;
-  }
-
-  .menu-open {
-    display: flex;
-    height: 100%;
-  }
-
-  .huesito {
-    display: flex;
-  }
-
-  .hdr-iconos:hover > h1 {
-    display: none; 
-  }
-
-  .section-slider {
-    height: 100%;
-    padding-bottom: 20px;
-  }
-  .slider-container {
-    display: none;
-  }
-
-  .respo {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    overflow: auto;
-    margin: auto;
-    margin-top: -80px;
-    margin-bottom: -50px;    
-  }
-
-  .respo > div > img{
-    height: 200px;
-    width: 200px;
-  }
-
-  .slider img:active + div {
-    opacity: 1;
-    background-color: chartreuse;
-    translate: -50vw;
-    font-size: 14px;
-    display: none;
-  }
-
-  .libros-container > div {
-    flex-wrap: wrap;
-  }
-
-  iframe {
-    max-width: 300px;
-  }
-
-  .info {
-    display: none;
-  }
-}
